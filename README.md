@@ -1,7 +1,7 @@
 # multi_array_signal_classification-MUSIC
 A Verilog demo of the multi-array signal classification algorithm, detecting two sources from four receivers and determining the AoA based on spectrum estimation.
 
-The background is that we have a 4-channel input system, each with distance \( d \), and we receive two narrowband signals with noise from different positions. By using MUSIC, we want to determine the two sources' AoA.
+The background is that we have a 4-channel input system, each with distance  d , and we receive two narrowband signals with noise from different positions. By using MUSIC, we want to determine the two sources' AoA.
 
 I tried to use signed integers to implement the algorithm on an FPGA, without floating point, while maintaining precision. This approach has potential for fast, parallel, low-power processing. Considering numerical stability and variable scales, different bit widths were used to represent them, along with normalization and a lookup table to approximate trigonometric functions. I obtained reasonable results, showing this approach is achievable.
 
@@ -22,7 +22,7 @@ A more detailed overview of the algorithm can be found in the MATLAB demo. The r
 ### Digital Design Blocks Methods:
 
 1. **Covariance Matrix Calculation**:
-   - Use 10 hardware MAC units to compute the \( 4 \times 4 \) symmetric covariance matrix.
+   - Use 10 hardware MAC units to compute the 4*4symmetric covariance matrix.
 
 2. **Eigenvalue Decomposition (EVD)**:
    - The CORDIC method is used for EVD. A special approach involves using zeta, the arctan theta, directly mapped to scaled integers: `int8.round(sin*512)` and `int8.round(cos*512)`. A Python script in this project generates the COE file for two single-port ROMs.
