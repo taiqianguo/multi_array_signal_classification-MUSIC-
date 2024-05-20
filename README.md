@@ -25,7 +25,7 @@ A more detailed overview of the algorithm can be found in the MATLAB demo. The r
    - Use 10 hardware MAC units to compute the 4*4symmetric covariance matrix.
 
 2. **Eigenvalue Decomposition (EVD)**:
-   - The CORDIC method is used for EVD. A special approach involves using zeta, the arctan theta, directly mapped to scaled integers: `int8.round(sin*512)` and `int8.round(cos*512)`. A Python script in this project generates the COE file for two single-port ROMs.
+   - The CORDIC method is used for EVD. A special approach involves using zeta, the arctan theta, directly mapped to scaled integers: `int10.round(sin*512)` and `int10.round(cos*512)`. A Python script in this project generates the COE file for two single-port ROMs.
    - In theory, zeta ranges from −∞ to ∞, but I truncate it to [-16, 16] corresponding to  [−0.49𝜋,0.49𝜋]. This range is linearly mapped to `address_zeta[0-1024]`, with granularity close to the truncation error.
    - Another important detail is that after each rotation, the values in 𝑉Σ𝑉′ should be normalized. This means 𝑣1=cos⁡(𝜃)⋅𝑉1/512  or 𝑣1=cos(θ)⋅sin(θ)⋅V1/(512^2)..
 
