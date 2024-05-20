@@ -48,4 +48,4 @@ There are some errors of the peak persion , but as for now, I have no idea where
 
 ### Future Development:
 
-For future development, robustness, more test cases, and vector calculators should be considered. Baed on my estimation, the total delay can shrinked up to around 1us with good parallel and spectrum search strategy. And this will be attractive for some interesting applications.
+For future development, numerical robustness, more test cases, and vector calculators should be considered. Baed on my estimation, the total delay can shrinked up to around 1us with good parallel and spectrum search strategy. And this will be attractive for some interesting applications.
