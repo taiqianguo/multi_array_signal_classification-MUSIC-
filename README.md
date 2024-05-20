@@ -38,7 +38,7 @@ In the test bench, the four Rx stimuli are generated from MATLAB. Considering th
 
 ### Simulation Results:
 
-There are some errors, but as for now, I have no idea where those harmonic-like secondary peaks come from.
+There are some errors of the peak persion , but as for now, I have no idea where those harmonic-like secondary peaks come from.
 
 <img width="443" alt="image" src="https://github.com/taiqianguo/multi_array_signal_classification-MUSIC-/assets/58079218/5130c97f-2987-4348-bab5-179044f51544">
 
