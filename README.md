@@ -22,7 +22,7 @@ The MUSIC demo's algorithm is illustrated as follows:
 
 A more detailed overview of the algorithm can be found in the MATLAB demo. The received MATLAB peak is as follows:
 
-<img width="1255" alt="image" src="https://github.com/taiqianguo/multi_array_signal_classification-MUSIC-/assets/58079218/a0ef6592-29ef-4f66-bc9f-f44f00391b12">
+<img width="355" alt="image" src="https://github.com/taiqianguo/multi_array_signal_classification-MUSIC-/assets/58079218/a0ef6592-29ef-4f66-bc9f-f44f00391b12">
 
 Digital Design Blocks Methods:
 1. Covariance Matrix Calculation:
@@ -39,14 +39,17 @@ Considering the serial and real-time nature of the concatenated blocks, I use no
 it will execute without being blocked. In the FSM, only when the final process has ended will the next iteration of the first block execute.
 
 
-<img width="731" alt="image" src="https://github.com/taiqianguo/multi_array_signal_classification-MUSIC-/assets/58079218/7cfcda9a-ff22-487f-992f-2bb627186e0b">
+<img width="531" alt="image" src="https://github.com/taiqianguo/multi_array_signal_classification-MUSIC-/assets/58079218/7cfcda9a-ff22-487f-992f-2bb627186e0b">
 
 
 
 simulation result as follows: their's do some error but as for now, i have no idea those harmonic like secondaries peaks from.
-<img width="1255" alt="image" src="https://github.com/taiqianguo/multi_array_signal_classification-MUSIC-/assets/58079218/d0e958da-aeb9-49ec-9ed6-05c6d6ccd995">
+
+
 
 <img width="1270" alt="image" src="https://github.com/taiqianguo/multi_array_signal_classification-MUSIC-/assets/58079218/d69ed300-37a9-491c-a3fd-61d737f578f2">
+
+
 
 <img width="1239" alt="image" src="https://github.com/taiqianguo/multi_array_signal_classification-MUSIC-/assets/58079218/997f7dbb-bcc9-4867-98dd-6ee79e6603d4">
 
