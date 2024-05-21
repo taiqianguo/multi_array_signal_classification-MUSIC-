@@ -32,7 +32,9 @@ A more detailed overview of the algorithm can be found in the MATLAB demo. The r
 3. **Steering Vector**:
    - The same lookup table approach is taken for the steering vector.
 
-In the test bench, the four Rx stimuli are generated from MATLAB. Considering the serial and real-time nature of the concatenated blocks, I use non-blocking pipeline control. This means if one block is free and the data from the previous block is ready, it will execute without being blocked. In the FSM, only when the final process has ended will the next iteration of the first block execute.
+In the test bench, the four Rx stimuli are generated from MATLAB. 
+
+Considering the serial and real-time nature of the concatenated blocks, I use non-blocking pipeline control. This means if one block is free and the data from the previous block is ready, it will execute without being blocked. In the FSM, only when the final process has ended will the next iteration of the first block execute.
 
 <img width="531" alt="image" src="https://github.com/taiqianguo/multi_array_signal_classification-MUSIC-/assets/58079218/7cfcda9a-ff22-487f-992f-2bb627186e0b">
 
